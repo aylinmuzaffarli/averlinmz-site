@@ -28,6 +28,28 @@
       font-size: 3em;
       margin: 0;
     }
+    header p {
+      margin: 10px 0 0;
+    }
+    .try-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 28px;
+      background: linear-gradient(45deg, #ff4b6e, #f79);
+      color: white;
+      font-weight: 600;
+      font-size: 1.1em;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(255, 75, 110, 0.5);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .try-button:hover,
+    .try-button:focus {
+      background: linear-gradient(45deg, #f79, #ff4b6e);
+      box-shadow: 0 6px 16px rgba(255, 75, 110, 0.7);
+      outline: none;
+    }
     .container {
       padding: 40px 10%;
       display: flex;
@@ -120,6 +142,9 @@
     <p>
       Created by Aylin Muzaffarli, passionate about AI, education, and future innovation
     </p>
+    <a href="https://averlinmz-kdhr5ugcac8p7hgthsg68r.streamlit.app/" target="_blank" class="try-button" rel="noopener noreferrer">
+      Try AverlinMz Chatbot
+    </a>
   </header>
 
   <div class="container">
