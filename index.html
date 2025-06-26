@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google site verification meta tag -->
+  <meta name="google-site-verification" content="yhfOqvaGwaRGtPAutRz3fbHS5KXE_zduOa5HpLUCbIU" />
+
   <title>AverlinMz – AI Study Chatbot</title>
   <style>
     body {
@@ -23,25 +26,7 @@
     }
     header h1 {
       font-size: 3em;
-      margin: 0 0 10px 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 0 0 20px 0;
-    }
-    .chatbot-button {
-      display: inline-block;
-      padding: 12px 28px;
-      background: #e91e63;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: background 0.3s ease;
-    }
-    .chatbot-button:hover {
-      background: #b71540;
+      margin: 0;
     }
     .container {
       padding: 40px 10%;
@@ -56,7 +41,7 @@
       padding: 30px;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: center; /* vertical center when row */
       animation: slideUp 1s ease;
     }
     .section:nth-child(even) {
@@ -66,6 +51,8 @@
       max-width: 300px;
       border-radius: 20px;
       margin: 20px;
+      object-fit: contain;
+      display: block; /* for margin auto centering */
     }
     .section-content {
       flex: 1;
@@ -105,19 +92,34 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* MOBILE FRIENDLY */
+    @media (max-width: 600px) {
+      .section {
+        flex-direction: column !important; /* stack vertically */
+        align-items: center; /* center horizontally */
+        text-align: center;
+      }
+
+      .section img {
+        margin: 20px 0; /* vertical margins only */
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .section-content {
+        min-width: auto;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>AverlinMz – Your AI Study Companion</h1>
-    <p>Created by Aylin Muzaffarli, passionate about AI, education, and future innovation</p>
-    <a
-      href="https://averlinmz-kdhr5ugcac8p7hgthsg68r.streamlit.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="chatbot-button"
-      >Try AverlinMz Chatbot</a
-    >
+    <p>
+      Created by Aylin Muzaffarli, passionate about AI, education, and future innovation
+    </p>
   </header>
 
   <div class="container">
@@ -152,10 +154,10 @@
         <h2>What is AverlinMz?</h2>
         <p>
           AverlinMz is an AI-powered chatbot made to support students in their
-          academic journey. It offers personalized study tips, tracks your
-          goals, detects your mood, and motivates you through thoughtful
-          conversation. It's not a replacement for a teacher, but a helpful
-          companion in your learning path.
+          academic journey. It offers personalized study tips, tracks your goals,
+          detects your mood, and motivates you through thoughtful conversation.
+          It's not a replacement for a teacher, but a helpful companion in your
+          learning path.
         </p>
       </div>
     </div>
@@ -194,8 +196,8 @@
   </div>
 
   <footer>
-    &copy; 2025 AverlinMz. Created with love and code by Aylin Muzaffarli.
-    Powered by imagination and AI.
+    &copy; 2025 AverlinMz. Created with love and code by Aylin Muzaffarli. Powered
+    by imagination and AI.
   </footer>
 </body>
 </html>
