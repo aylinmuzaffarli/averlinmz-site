@@ -28,6 +28,22 @@
       font-size: 3em;
       margin: 0;
     }
+    .try-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #ffffff;
+      color: #e91e63;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .try-button:hover {
+      background-color: #fce4ec;
+      transform: translateY(-2px);
+    }
     .container {
       padding: 40px 10%;
       display: flex;
@@ -41,7 +57,7 @@
       padding: 30px;
       display: flex;
       flex-wrap: wrap;
-      align-items: center; /* vertical center when row */
+      align-items: center;
       animation: slideUp 1s ease;
     }
     .section:nth-child(even) {
@@ -52,7 +68,7 @@
       border-radius: 20px;
       margin: 20px;
       object-fit: contain;
-      display: block; /* for margin auto centering */
+      display: block;
     }
     .section-content {
       flex: 1;
@@ -93,21 +109,18 @@
       text-decoration: underline;
     }
 
-    /* MOBILE FRIENDLY */
     @media (max-width: 600px) {
       .section {
-        flex-direction: column !important; /* stack vertically */
-        align-items: center; /* center horizontally */
+        flex-direction: column !important;
+        align-items: center;
         text-align: center;
       }
-
       .section img {
-        margin: 20px 0; /* vertical margins only */
+        margin: 20px 0;
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
       }
-
       .section-content {
         min-width: auto;
       }
@@ -115,13 +128,12 @@
   </style>
 </head>
 <body>
- <header>
-  <h1>AverlinMz – Your AI Study Companion</h1>
-  <a href="https://your-chatbot-link-here" target="_blank" class="try-button">
-    🎓 Try AverlinMz – Study Chatbot
-  </a>
-</header>
-
+  <header>
+    <h1>AverlinMz – Your AI Study Companion</h1>
+    <a href="https://aylinmuzaffarli.github.io/averlinmz-site/" target="_blank" class="try-button">
+      🎓 Try AverlinMz – Study Chatbot
+    </a>
+  </header>
 
   <div class="container">
     <div class="section">
